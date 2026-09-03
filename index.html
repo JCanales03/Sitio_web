@@ -3,25 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="styles.css" rel="stylesheet">
+    <title>Tienda de Chocolates</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="cabecera" >
-        <img src="https://cdn.pixabay.com/photo/2020/07/11/12/31/idea-5393862_1280.png">
-        <img src="https://cdn.pixabay.com/photo/2026/07/25/05/15/05-15-09-393_1280.jpg">
-        <div class="Descripcion">
-            --------------Descripcion--------------
-        </div>
-        <div class="Nombre">
-            Nombre : Jonathan Canales
-        </div>
-        <div class="Edad">
-            Edad : 24 años
-        </div>
-        <div>
-            ------------------------------------------
-        </div>
+    <div class="container">
+        
+        <h1>Tienda de Chocolates</h1>
+
+        <form id="formProducto">
+            <div class="campo">
+                <label for="codigo">Codigo</label>
+                <input type="text" id="codigo" name="codigo" placeholder="Ingrese Codigo">
+                <span id="errorCodigo" class="error"></span>
+            </div>
+
+            <div class="campo">
+                <label for="nombre">Nombre del Chocolate</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre de Chocolate">
+                <span id="errorNombre" class="error"></span>
+            </div>
+
+            <div class="campo">
+                <label for="categoria">Tipo de Chocolate</label>
+                <select id="categoria" name="categoria">
+                    <option value="">Seleccione una opcion</option>
+                    <option value="Negro">Chocolate Negro / Amargo</option>
+                    <option value="Con Leche">Chocolate con Leche</option>
+                    <option value="Blanco">Chocolate Blanco</option>
+                    <option value="Relleno">Rellenos / Trufas</option>
+                    <option value="Sabor Menta">Chocolate / Menta</option>
+                    <option value="Sabor Naranja">Chocolate / Naranja</option>
+                </select>
+                <span id="errorCategoria" class="error"></span>
+            </div>
+
+            <button type="submit">Agregar Chocolate</button>
+            <button type="reset" class="btn-limpiar">Limpiar</button>
+        </form>
+
+        <div id="mensaje" class="exito"></div>
     </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

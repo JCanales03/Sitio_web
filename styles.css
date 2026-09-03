@@ -1,11 +1,82 @@
-.cabecera {
-    right: 60px;
-    height: 500px;
-    background-color: bisque;
-
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f3e9;
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/01/22/24/dark-2568310_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-img{
-    right: 1000px;
-    height: 500px;
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4a2e18;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5c3a21;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #d4c5b9;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7b3f00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #5a2e00;
+}
+
+.btn-limpiar {
+    background-color: #a67c52;
+    margin-top: 10px;
+}
+
+.btn-limpiar:hover {
+    background-color: #8c653f;
+}
+
+.error {
+    color: #d9534f;
+    font-size: 13px;
+    margin-top: 4px;
+    display: block;
+}
+
+.exito {
+    color: #4ca64c;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
 }
