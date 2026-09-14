@@ -1,51 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Chocolates</title>
+    <title>Tienda de Chocolates - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        
-        <h1>Tienda de Chocolates</h1>
 
-        <form id="formProducto">
-            <div class="campo">
-                <label for="codigo">Codigo</label>
-                <input type="text" id="codigo" name="codigo" placeholder="Ingrese Codigo">
-                <span id="errorCodigo" class="error"></span>
+    <div class="contenedor-principal">
+
+        <header class="barra-navegacion">
+            <div class="logo-contenedor">
+                <span class="cuadrito-logo"></span>
+                <span class="nombre-sitio">Tienda de Chocolates</span>
             </div>
-
-            <div class="campo">
-                <label for="nombre">Nombre del Chocolate</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre de Chocolate">
-                <span id="errorNombre" class="error"></span>
+            <nav class="enlaces-menu">
+                <a href="index.html" class="activo">Home</a>
+                <a href="productos.html">Productos</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <div class="info-carrito">
+                🛒 Carrito (0)
             </div>
+        </header>
 
-            <div class="campo">
-                <label for="categoria">Tipo de Chocolate</label>
-                <select id="categoria" name="categoria">
-                    <option value="">Seleccione una opcion</option>
-                    <option value="Negro">Chocolate Negro / Amargo</option>
-                    <option value="Con Leche">Chocolate con Leche</option>
-                    <option value="Blanco">Chocolate Blanco</option>
-                    <option value="Relleno">Rellenos / Trufas</option>
-                    <option value="Sabor Menta">Chocolate / Menta</option>
-                    <option value="Sabor Naranja">Chocolate / Naranja</option>
-                </select>
-                <span id="errorCategoria" class="error"></span>
+        <div class="barra-sesion">
+            <a href="iniciar-sesion.html">Iniciar sesión</a> | 
+            <a href="registro.html">Registrar usuario</a>
+        </div>
+
+        <section class="seccion-hero">
+            <div class="hero-contenido">
+                <div class="hero-texto">
+                    <h1>TIENDA DE CHOCOLATES ONLINE</h1>>
+                    <button class="boton-ver">Ver productos</button>
+                </div>
+                <div class="hero-imagen">
+                    <span>[ Imagen Destacada ]</span>
+                </div>
             </div>
+        </section>
 
-            <button type="submit">Agregar Chocolate</button>
-            <button type="reset" class="btn-limpiar">Limpiar</button>
-        </form>
+        <main class="seccion-productos">
+            <h2>Productos Destacados</h2>
+            <div class="grilla-productos">
 
-        <div id="mensaje" class="exito"></div>
+                <div class="tarjeta-producto">
+                    <img src="https://cdn.pixabay.com/photo/2022/09/24/16/10/chocolate-7476669_1280.jpg" alt="Chocolate Negro" class="imagen-producto">
+                    <p class="titulo-producto">Chocolate Negro</p>
+                    <div class="detalles-producto">
+                        <span class="atributo">Negro</span>
+                        <span class="precio">$5.990</span>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <img src="https://media.istockphoto.com/id/178164071/photo/cut-strawberry-with-whole-nut-black-chocolate.jpg?s=2048x2048&w=is&k=20&c=fTEa-f0w4QdDvfhgXWd5B8q9HdqznVjMptoz5W4gnc0=" alt="Chocolate Con Frutillas" class="imagen-producto">
+                    <p class="titulo-producto">Chocolate con Frutillas</p>
+                    <div class="detalles-producto">
+                        <span class="atributo">Con Frutilla</span>
+                        <span class="precio">$4.990</span>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <img src="https://cdn.pixabay.com/photo/2014/06/30/20/05/white-chocolate-380702_1280.jpg" alt="Chocolate Blanco" class="imagen-producto">
+                    <p class="titulo-producto">Chocolate Blanco</p>
+                    <div class="detalles-producto">
+                        <span class="atributo">Blanco</span>
+                        <span class="precio">$4.500</span>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <img src="" alt="" class="imagen-producto">
+                    <p class="titulo-producto"></p>
+                    <div class="detalles-producto">
+                        <span class="atributo"></span>
+                        <span class="precio">$</span>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <img src="" alt="" class="imagen-producto">
+                    <p class="titulo-producto"></p>
+                    <div class="detalles-producto">
+                        <span class="atributo"></span>
+                        <span class="precio">$</span>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <img src="https://media.istockphoto.com/id/455621259/photo/close-up-of-chocolate-pieces.jpg?s=2048x2048&w=is&k=20&c=FlD8jeElpHFliwwKlG36Z1WU6sccXXq1upYAYoIsE14=" alt="Chocolate de Naranja" class="imagen-producto">
+                    <p class="titulo-producto">Chocolate de Naranja</p>
+                    <div class="detalles-producto">
+                        <span class="atributo">Sabor Naranja</span>
+                        <span class="precio">$5.500</span>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <img src="" alt="" class="imagen-producto">
+                    <p class="titulo-producto"></p>
+                    <div class="detalles-producto">
+                        <span class="atributo"></span>
+                        <span class="precio">$</span>
+                    </div>
+                </div>
+
+                <div class="tarjeta-producto">
+                    <img src="" alt="" class="imagen-producto">
+                    <p class="titulo-producto"></p>
+                    <div class="detalles-producto">
+                        <span class="atributo"></span>
+                        <span class="precio">$</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="pie-pagina-izquierda">
+            <div class="pie-izquierda">
+                <p class="marca-footer">Tienda de Chocolates</p>
+            </div>
+            <div class="pie-pagina-derecha">
+                <p>¡Mantente en contacto!</p>
+                <div class="formulario-newsletter">
+                    <input type="email" placeholder="Ingresa tu correo">
+                    <button>Suscribirse</button>
+                </div>
+            </div>
+        </footer>
+
     </div>
 
-    <script src="script.js"></script>
 </body>
-
 </html>
