@@ -43,6 +43,71 @@ body {
     font-weight: bold;
 }
 
+.contenedor-formulario {
+    background-color: #f7f3e9; /* O el tono claro que uses */
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-formulario {
+    background-color: #dcd6cd;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-registro label {
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #3d2314;
+}
+
+.formulario-registro input, 
+.formulario-registro select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contenedor-selects {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.grupo-select {
+    flex: 1;
+}
+
+.boton-registrar {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #3d2314;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-registrar:hover {
+    background-color: #5c351f;
+}
+
 .cuadrito-logo {
     width: 15px;
     height: 15px;
@@ -138,6 +203,13 @@ body {
     color: #555;
     font-style: italic;
     border-radius: 4px;
+}
+
+.seccion-registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
 }
 
 .seccion-productos {
